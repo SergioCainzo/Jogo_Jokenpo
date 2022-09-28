@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Jo Ken Po</title>
+</head>
+<body>
+    
+    <main>
+        <div class="container principal">
+            <h1>Jo Ken Po</h1>
+            <h3>Vamos Jogar</h3>
+            <p>O jogo é simples, você escolhe uma das opções e o computador irá escolher uma das opções aleatórias.</p>
+
+            <div class="container_jogo">
+                <div class="container_jogador">
+                    <div class="container_opcoes">
+                        <img src="assets/imagens/emoji.png" alt="Jogador" class="emoji_jogador">
+                        <h3 class="titulo_jogador">Jogador</h3>
+                        <br>
+                        <input type="button" value="Pedra" id="pedra"
+                        class="pedra">
+                        <br>
+                        <input type="button" value="Papel" id="papel"
+                        class="papel">
+                        <br>
+                        <input type="button" value="Tesoura" id="tesoura"
+                        class="tesoura">
+
+                    </div>
+                    
+                </div>
+                
+                <div class="container_resultado">
+                    <div class="resultado_jogador">
+                        <p class="placar_jogador">Placar</p>
+                        <p class="pontos_jogador">0</p>
+                        <br>
+                        <p class="escolha_jogador">Jogador</p>
+                        <br>
+                        <br>
+                        <br>
+                        <span class="span_jogador"><img src="assets/imagens/emoji.png" alt="Jogador"></span>
+                    </div>
+                    <div class="resultado_comp">
+                        <p class="placar_comp">Placar</p>
+                        <p class="pontos_comp">0</p>
+                        <br>
+                        <p class="escolha_comp">Computador</p>
+                        <br>
+                        <br>
+                        <br>
+                        <span class="span_comp"><img src="assets/imagens/pc.png" alt="Computador"></span>
+                    </div>
+                </div>
+
+                <div class="container_computador">
+                    <div class="container_opcoes">
+                        <img src="assets/imagens/pc.png" alt="Computador">
+                        <h3 class="titulo_comp">Computador</h3>
+                        <br>
+                        <img src="assets/imagens/pcpedra.png" alt="Pedra Computador">
+                        <br>
+                        <img src="assets/imagens/pcpapel.png" alt="Papel Computador">
+                        <br>
+                        <img src="assets/imagens/pctesoura.png" alt="Tesoura Computador">
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        
+    </main>
+
+
+    <script src="assets/js/jogo.js"></script>
+</body>
+</html>

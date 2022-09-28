@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.principal{
+    text-align: center;
+    border: 5px solid black;
+    height: 500px;
+}
+
+.container_jogo{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    border: 2px solid blue;
+    height: auto;
+}
+
+.container_jogador{
+    background-color: aquamarine;
+    width: 20%;
+    padding: 5em;
+}
+
+.container_resultado{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: black;
+    color: white;
+    width: 50%;
+    border: 8px solid white;
+}
+
+.resultado_jogador, .resultado_comp{
+    border: 1px solid white;
+}
+
+.placar_jogador, .placar_comp{
+    font-size: 40px;
+    font-weight: bolder;
+    text-decoration: underline 2px;
+}
+
+.pontos_jogador, .pontos_comp{
+    margin-top: 10px;
+    font-size: 40px;
+}
+
+.escolha_jogador, .escolha_comp {
+    font-size: 30px;
+    margin-top: 80px;
+}
+
+.container_computador{
+    background-color: beige;
+    width: 20%;
+    padding: 5em;
+}
+
+.container_opcoes{
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.pedra, .papel, .tesoura {
+    padding: 1em;
+    margin: 20px 0;
+    font-size: 30px;
+    border-radius: 50px;
+    transition: all 0.8s;
+    cursor: pointer;
+}
+
+.pedra:hover, .papel:hover, .tesoura:hover{
+    transform: scale(1.2);
+    background-color: powderblue;
+}
