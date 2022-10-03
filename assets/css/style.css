@@ -1,79 +1,130 @@
-*{
+* {
     margin: 0;
     padding: 0;
     border: 0;
 }
 
-.principal{
-    text-align: center;
-    border: 5px solid black;
-    height: 500px;
+html {
+    background-color: rgb(48, 47, 47);
 }
 
-.container_jogo{
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    border: 2px solid blue;
-    height: auto;
-}
-
-.container_jogador{
-    background-color: aquamarine;
-    width: 20%;
-    padding: 5em;
-}
-
-.container_resultado{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    background-color: black;
+/* Container Cabeçalho */
+.cabecalho{
     color: white;
-    width: 50%;
-    border: 8px solid white;
+
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.resultado_jogador, .resultado_comp{
+.titulo {
+    text-align: center;
+}
+
+.cabecalho h4{
+    color: rgb(248, 68, 68);
+    font-size: 15px;
+    text-decoration: underline 3px rgba(255, 0, 0, 0.61);
+    margin: 10px 0;
+    text-transform: uppercase;
+}
+
+.cabecalho p {
+    line-height: 30px;
+}
+
+.cabecalho p i{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-style: normal;
+    text-decoration: underline 1px rgb(15, 114, 245);
+    color: powderblue;
+}
+/* Contaioner Principal */
+.principal {
+    background-color: rgba(128, 128, 128, 0.788);
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    width: 800px;
+
+    padding: 2em;
+    color: white;
+    border-radius: 50px;
     border: 1px solid white;
+    box-shadow: 5px 5px 10px white;
+
+
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.placar_jogador, .placar_comp{
-    font-size: 40px;
-    font-weight: bolder;
-    text-decoration: underline 2px;
+/* Container Jogo */
+.container_jogador, .container_resultado, .container_computador {
+    text-align: center;
 }
 
-.pontos_jogador, .pontos_comp{
-    margin-top: 10px;
-    font-size: 40px;
-}
-
-.escolha_jogador, .escolha_comp {
-    font-size: 30px;
-    margin-top: 80px;
-}
-
-.container_computador{
-    background-color: beige;
-    width: 20%;
-    padding: 5em;
-}
-
-.container_opcoes{
+/* Container Placar */
+.container_resultado{
     display: flex;
     flex-flow: column wrap;
+    text-align: center;
 }
 
-.pedra, .papel, .tesoura {
+.container_placar{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.placar {
+    width: 120px;
     padding: 1em;
-    margin: 20px 0;
-    font-size: 30px;
-    border-radius: 50px;
-    transition: all 0.8s;
-    cursor: pointer;
 }
 
-.pedra:hover, .papel:hover, .tesoura:hover{
-    transform: scale(1.2);
-    background-color: powderblue;
+.placar h3{
+    font-size: 20px;   
+
+}
+
+.placar p{
+    margin: 50% 0;
+    font-size: 60px;
+}
+
+span{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+/* Nome das abas */
+
+.titulo_jogador {
+    color: aqua;
+}
+
+.titulo_comp {
+    color: rgba(0, 0, 0, 0.548);
+}
+
+/* Imagens */
+
+.pedra, .papel, .tesoura{
+    margin: 15px 0;
+    transition: all 0.5s;
+}
+
+.pedra:hover, .papel:hover, .tesoura:hover {
+    transform: scale(1.7);
+}
+
+.imagem_computador{
+    margin: 50% 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
 }

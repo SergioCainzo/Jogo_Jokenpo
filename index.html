@@ -10,72 +10,54 @@
 </head>
 <body>
     
+    <header class="container cabecalho">
+        <h1 class="titulo">Jo Ken Po !!!</h1>
+        
+        <h4>Regras:</h4>
+        <p>A <i>Pedra</i> ganha da <i>Tesoura</i> e perde para o <i>Papel</i>.
+        <br>
+        O <i>Papel</i> ganha da <i>Pedra</i> e perde para a <i>Tesoura</i>.
+        <br>
+        A <i>Tesoura</i> ganha do <i>Papel</i> e perde para a <i>Pedra</i>.</p>
+    </header>
+
     <main>
-        <div class="container principal">
-            <h1>Jo Ken Po</h1>
-            <h3>Vamos Jogar</h3>
-            <p>O jogo é simples, você escolhe uma das opções e o computador irá escolher uma das opções aleatórias.</p>
-
-            <div class="container_jogo">
-                <div class="container_jogador">
-                    <div class="container_opcoes">
-                        <img src="assets/imagens/emoji.png" alt="Jogador" class="emoji_jogador">
-                        <h3 class="titulo_jogador">Jogador</h3>
-                        <br>
-                        <input type="button" value="Pedra" id="pedra"
-                        class="pedra">
-                        <br>
-                        <input type="button" value="Papel" id="papel"
-                        class="papel">
-                        <br>
-                        <input type="button" value="Tesoura" id="tesoura"
-                        class="tesoura">
-
-                    </div>
-                    
+        <div class="container principal"> 
+            <div class="container_jogador">
+                <div class="container_opcoes">
+                    <h2 class="titulo_jogador">Jogador</h2>
+                    <br>
+                    <img src="assets/imagens/pedra-removebg-preview.png" alt="Pedra" class="pedra" id="pedra">
+                    <br>
+                    <img src="assets/imagens/papel-removebg-preview.png" alt="Papel" id="papel" class="papel">
+                    <br>
+                    <img src="assets/imagens/tesoura-removebg-preview.png" alt="Tesoura" id="tesoura" class="tesoura">
                 </div>
-                
-                <div class="container_resultado">
-                    <div class="resultado_jogador">
-                        <p class="placar_jogador">Placar</p>
-                        <p class="pontos_jogador">0</p>
-                        <br>
-                        <p class="escolha_jogador">Jogador</p>
-                        <br>
-                        <br>
-                        <br>
-                        <span class="span_jogador"><img src="assets/imagens/emoji.png" alt="Jogador"></span>
+            </div>
+            
+            <div class="container_resultado">
+                <h2>Placar</h2>
+                <div class="container_placar">
+                    <div class="placar">
+                        <h3>Jogador</h3>
+                        <p class="placar_jogador">0</p>
+                        <span class="span_jogador"></span>
                     </div>
-                    <div class="resultado_comp">
-                        <p class="placar_comp">Placar</p>
-                        <p class="pontos_comp">0</p>
-                        <br>
-                        <p class="escolha_comp">Computador</p>
-                        <br>
-                        <br>
-                        <br>
-                        <span class="span_comp"><img src="assets/imagens/pc.png" alt="Computador"></span>
-                    </div>
-                </div>
-
-                <div class="container_computador">
-                    <div class="container_opcoes">
-                        <img src="assets/imagens/pc.png" alt="Computador">
-                        <h3 class="titulo_comp">Computador</h3>
-                        <br>
-                        <img src="assets/imagens/pcpedra.png" alt="Pedra Computador">
-                        <br>
-                        <img src="assets/imagens/pcpapel.png" alt="Papel Computador">
-                        <br>
-                        <img src="assets/imagens/pctesoura.png" alt="Tesoura Computador">
+                    <div class="placar">
+                        <h3>Computador</h3>
+                        <p class="placar_comp">0</p>
+                        <span class="span_comp"></span>
                     </div>
                 </div>
             </div>
 
-
-        </div>
-
-        
+            <div class="container_computador">
+                <div class="container_opcoes">
+                    <h2 class="titulo_comp">Computador</h2>
+                    <img src="assets/imagens/pc.png" alt="Computador" class="imagem_computador">
+                </div>
+            </div>
+        </div>        
     </main>
 
 
